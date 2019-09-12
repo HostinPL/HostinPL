@@ -1,0 +1,198 @@
+// ---------------------------------
+// STEPS
+// ---------------------------------
+
+.steps {
+  overflow: hidden;
+  width: 100%;
+  padding-left:0;
+  list-style-type: none;
+}
+
+.steps a {
+  padding: 8px 10px 8px 25px;
+  float: left;
+  text-align:center;
+  text-decoration: none;
+  color: #000;
+  position: relative;
+  background: white;
+  width:auto;
+  border-top: 1px solid #CCC;
+  border-bottom: 1px solid #CCC;
+
+  &:hover {
+    background-color: #E6E6E6;
+    border-top: 1px solid #ADADAD;
+    border-bottom: 1px solid #ADADAD;
+
+    &::after {
+      border-left-color: #E6E6E6;
+    }
+  }
+
+  &::after, &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -19px;   
+    border-top: 19px solid transparent;
+    border-bottom: 19px solid transparent;
+    border-left: 1em solid;
+    right: -1em;
+    border-left-color: black;
+  }
+
+  &::after {
+    z-index: 2;  
+    border-left-color: white; 
+  }
+}
+
+.steps li:first-child a {
+  padding-left:10px;
+  border-left: 1px solid #CCC;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.steps .step-info {
+
+  &:first-child {
+    a {
+      border-left: 1px solid #46b8da;
+      
+      &:hover {
+        border-left: 1px solid #269abc;
+      }
+    }
+  }
+
+  a {
+    background: #5bc0de;
+    color: white;
+    border-top: 1px solid #46b8da;
+    border-bottom: 1px solid #46b8da;
+
+    &::after {
+      border-left-color: #5bc0de;
+    }
+
+    &:hover {
+      background: #31b0d5;
+      border-top: 1px solid #269abc;
+      border-bottom: 1px solid #269abc;
+
+      &::after {
+        border-left-color: #31b0d5;
+      }
+    }
+  }
+}
+
+.steps .step-success {
+
+  &:first-child {
+    a {
+      border-left: 1px solid #4cae4c;
+      
+      &:hover {
+        border-left: 1px solid #398439;
+      }
+    }
+  }
+
+  a {
+    background: #5cb85c;
+    color: white;
+    border-top: 1px solid #4cae4c;
+    border-bottom: 1px solid #4cae4c;
+
+    &::after {
+      border-left-color: #5cb85c;
+    }
+
+    &:hover {
+      background: #449d44;
+      border-top: 1px solid #398439;
+      border-bottom: 1px solid #398439;
+
+      &::after {
+        border-left-color: #449d44;
+      }
+    }
+  }
+}
+
+.steps .step-danger {
+
+  &:first-child {
+    a {
+      border-left: 1px solid #d43f3a;
+      
+      &:hover {
+        border-left: 1px solid #ac2925;
+      }
+    }
+  }
+
+  a {
+    background: #d9534f;
+    color: white;
+    border-top: 1px solid #d43f3a;
+    border-bottom: 1px solid #d43f3a;
+
+    &::after {
+      border-left-color: #d9534f;
+    }
+
+    &:hover {
+      background: #c9302c;
+      border-top: 1px solid #ac2925;
+      border-bottom: 1px solid #ac2925;
+
+      &::after {
+        border-left-color: #c9302c;      
+      }
+    }
+  }
+}
+
+.steps .step-primary {
+
+  &:first-child {
+    a {
+      border-left: 1px solid #357ebd;
+      
+      &:hover {
+        border-left: 1px solid #285e8e;
+      }
+    }
+  }
+
+  a {
+    background: #428bca;
+    color: white;
+    border-top: 1px solid #357ebd;
+    border-bottom: 1px solid #357ebd;
+
+    &::after {
+      border-left-color: #428bca;
+    }
+
+    &:hover {
+      background: #3071a9;
+      border-top: 1px solid #285e8e;
+      border-bottom: 1px solid #285e8e;
+
+      &::after {
+        border-left-color: #3071a9;      
+      }
+    }
+  }
+}
+
+.steps .disabled a {
+  pointer-events: none;
+  color: #CCC;
+}

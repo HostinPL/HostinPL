@@ -1,0 +1,68 @@
+body {
+	padding-top: 72px;
+}
+
+.form-signin {
+	max-width: 360px;
+	margin: 0 auto;
+	background: #fff;
+}
+.content {
+   background-color: #fff;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  width: 400px;
+  margin: 40px auto 10px;
+  padding: 10px 30px 30px;
+  overflow: hidden;
+  position: relative;
+}
+.form-signin .other-link {
+	margin: 15px 0;
+	text-align: center;
+}
+.form-signin .form-signin-heading {
+	margin-bottom: 10px;
+	text-align: center;
+}
+.form-signin .form-control {
+	position: relative;
+	font-size: 16px;
+	height: auto;
+	padding: 10px;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.form-signin .form-control:focus {
+	z-index: 2;
+}
+.form-signin .captcha {
+	padding: 10px;
+	text-align: center;
+}
+.form-signin .form-control {
+	margin-bottom: 10px;
+}
+.form-signin .form-group-vertical {
+	margin: 10px 0;
+}
+.form-signin .form-group-vertical input {
+	margin: 0;
+}
+.form-signin .form-group-vertical input:first-child {
+	  background-color: #dde3ec;
+  height: 43px;
+  color: #8290a3;
+  border: 1px solid #dde3ec;
+}
+.form-signin .form-group-vertical input:last-child {
+	margin-top: 5px;
+	  background-color: #dde3ec;
+  height: 43px;
+  color: #8290a3;
+  border: 1px solid #dde3ec;
+}
